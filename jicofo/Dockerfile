@@ -48,6 +48,6 @@ LABEL maintainer="Dave Conroy <dave at tiredofit dot ca>"
   ADD install /
   
 ### https://docs.openshift.org/latest/creating_images/guidelines.html#openshift-specific-guidelines   
-  RUN chgrp -R 0 /usr/src/jicofo && \
-    chmod -R g=u /usr/share/jicofo
+  RUN /bin/chgrp -R 0 /usr/src/jicofo && \
+    /bin/chmod -R g=u /usr/share/jicofo
   USER 1001
