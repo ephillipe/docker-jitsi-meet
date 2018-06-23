@@ -6,7 +6,7 @@ LABEL maintainer="Dave Conroy <dave at tiredofit dot ca>"
       JICOFO_VERSION=403
 
 ### Add User
-  RUN adduser -h /usr/share/jicofo -D -g "Jitsi Conference Focus" -u 2500 jicofo -G root && \
+  RUN adduser -h /usr/share/jicofo -D -g "Jitsi Conference Focus" -u 1001 jicofo -G root && \
 
 ### Add Dependencies      
       apk update && \
